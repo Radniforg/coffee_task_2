@@ -1,4 +1,4 @@
-access_token = '1316a67d68b2b87ffe5752d05edc2c13062f3a9c19c58dd033179dac46ac4675db411bb0da218926df567' // VK token
+access_token = '' // VK token
 ss = SpreadsheetApp.getActive()
 sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0] // Лист
 
