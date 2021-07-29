@@ -1,7 +1,8 @@
-access_token = '' // VK token
-sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Pendragon') // Лист
+access_token = '1316a67d68b2b87ffe5752d05edc2c13062f3a9c19c58dd033179dac46ac4675db411bb0da218926df567' // VK token
+ss = SpreadsheetApp.getActive()
+sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0] // Лист
 
-function test_run() {
+function Pendragon_wall() {
   var link = '1369223'
   /*
    A - ID поста
@@ -96,6 +97,9 @@ function test_run() {
   fullRange.setVerticalAlignment("top")
   fullRange.setHorizontalAlignment("left")
   fullRange.setWrap(true)
+
+  ScriptApp.newTrigger('Pendragon_wall').forSpreadsheet(ss).onOpen().create()
+
 }
 
 
